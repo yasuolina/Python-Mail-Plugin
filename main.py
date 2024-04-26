@@ -8,7 +8,7 @@ import os
 
 def send_email(zip_file, to, subject, body):
     msg = MIMEMultipart()
-    msg['From'] = "ysmn108@hotmail.com"
+    msg['From'] = "example_email"
     msg['To'] = to
     msg['Subject'] = subject
     msg.attach(MIMEText(body))
@@ -61,7 +61,7 @@ def main():
                    Thank You
                    '''
         mail_subject = "TRIAL PYTHON E-MAIL"
-        sender_mail = "yasmincinarr@gmail.com"
+        sender_mail = "your_email"
         send_email(path + file_name + '.zip', sender_mail, mail_subject,
                    mail_content)
     else:
@@ -70,6 +70,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# "/Users/yasmiiinay/Desktop/BORGWARNER STAJ/trial.zip"
 
