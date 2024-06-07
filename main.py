@@ -21,8 +21,8 @@ def send_email(zip_file, to, subject, body):
     smtp = smtplib.SMTP('smtp.office365.com', 587)
     smtp.starttls()
     sender_password = input("Please enter the password of sender : ")
-    smtp.login("ysmn108@hotmail.com", sender_password)
-    smtp.sendmail("ysmn108@hotmail.com", to, msg.as_string())
+    smtp.login("deneme@hotmail.com", sender_password)
+    smtp.sendmail("deneme@hotmail.com", to, msg.as_string())
     smtp.quit()
     print('Mail sent successfully.')
 
